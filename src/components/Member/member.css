@@ -1,0 +1,31 @@
+/* Team member card styles */
+.team-member {
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Name and position styles */
+.team-member h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}

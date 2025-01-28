@@ -1,0 +1,14 @@
+.sponsors-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.page-title h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.description {
+    text-align: justify;
+    padding: 20px;
+}
