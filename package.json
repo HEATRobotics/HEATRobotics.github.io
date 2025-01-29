@@ -1,5 +1,6 @@
 {
   "name": "heat-robotics-website",
+  "homepage": "https://heatrobotics.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,8 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
