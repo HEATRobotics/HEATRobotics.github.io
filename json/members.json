@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Electrical",
+        "data": [
+            {
+                "name": "Mathew Bishop",
+                "position":  "Electrical Lead",
+                "linkedInURL": ""
+            }
+        ]
+    },
+    {
+        "title": "Mechanical",
+        "data": [
+        ]
+    },
+    {
+        "title": "Software",
+        "data": [
+            {
+                "name": "MacKenzie Richards",
+                "position": "Software Lead",
+                "linkedInURL": "https://www.linkedin.com/in/mackenzie-richards-484043212"
+            },
+            {
+                "name": "Ankkit Prakash",
+                "position": "VP",
+                "linkedInURL": "https://www.linkedin.com/in/ankkp/"
+            },
+            {
+                "name": "Aidan Morris",
+                "position": "Developer",
+                "linkedInURL": "https://github.com/SilverSix6"
+            },
+            {
+                "name": "Syed Aamir Ahmed",
+                "position": "Developer",
+                "linkedInURL": "https://www.linkedin.com/in/syed-aamir-ahmed/"
+            },
+            {
+                "name": "Fortune Olawale",
+                "position": "Developer",
+                "linkedInURL": "https://github.com/bluepeach1121"
+            }
+        ]
+    },
+    {
+        "title": "Manufacturing",
+        "data": [
+            {
+                "name": "Kevin Lam",
+                "position": "Manufacturing Lead",
+                "linkedInURL": "https://linkedin.com/in/kelvin-lam-361aba296"
+            },
+            {
+                "name": "Keegan Heidt",
+                "position": "Member",
+                "linkedInURL": "https://www.linkedin.com/in/keegan-heidt-581184295/"
+            }
+        ]
+    },
+    {
+        "title": "Management",
+        "data": [
+        ]
+    }
+]
+
