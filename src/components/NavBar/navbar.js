@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './navbar.css';
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi"; // Import icons for menu
+import './navbar.css'
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
@@ -11,52 +13,49 @@ const Navbar = () => {
             setIsScrolled(window.scrollY > 20);
         };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
         <header className="header">
-            <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
+            <nav className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
                 <div className="navbar-container">
                     <Link to="/" className="navbar-brand">
                         <img
                             src="./assets/team/logo_2.png"
                             alt="HEAT Robotics Logo"
-                            className="navbar-logo"
+                            className="navbar-logo desktop-logo"
+                        />
+                        <img
+                            src="./assets/team/logo_3.png"
+                            alt="HEAT Robotics Mobile Logo"
+                            className="navbar-logo mobile-logo"
                         />
                     </Link>
 
-                    <div className="nav-links">
-                        <Link
-                            to="/"
-                            className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            to="/team"
-                            className={`nav-link ${location.pathname === '/team' ? 'active' : ''}`}
-                        >
-                            Our Team
-                        </Link>
-                        <Link
-                            to="/contact"
-                            className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
-                        >
-                            Contact
-                        </Link>
-                        <Link
-                            to="/sponsors"
-                            className={`nav-link ${location.pathname === '/sponsors' ? 'active' : ''}`}
-                        >
-                            Sponsors
-                        </Link>
+
+                    {/* Mobile Menu Button */}
+                    <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+                        {menuOpen ? <FiX /> : <FiMenu />}
+                    </button>
+
+                    {/* Nav Links */}
+                    <div className={`nav-links ${menuOpen ? "nav-open" : ""}`}>
+                        {["/", "/team", "/contact", "/sponsors"].map((path) => (
+                            <Link
+                                key={path}
+                                to={path}
+                                className={`nav-link ${location.pathname === path ? "active" : ""}`}
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                {path === "/" ? "Home" : path.substring(1).replace("-", " ")}
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </nav>
         </header>
     );
 };
-
 export default Navbar;
