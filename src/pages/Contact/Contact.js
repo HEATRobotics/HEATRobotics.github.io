@@ -9,7 +9,7 @@ function Contact() {
         <div className="reset-styles">
             <PageTitle title="Contact Us"
             description="Have questions or want to get involved? Reach out to Heat Robotics! We’re excited to connect with others who share our passion for robotics and public safety."></PageTitle>
-            <Parallax image={`wildfire-4.jpg`} />
+            <Parallax image={`wildfire-4`} />
 
             <SkewedDiv>
                 <h3>Contact Us</h3>
@@ -22,7 +22,7 @@ function Contact() {
 
             </SkewedDiv>
 
-            <Parallax image={`wildfire-3.jpg`} />
+            <Parallax image={`wildfire-3`} />
         </div>
     );
 }

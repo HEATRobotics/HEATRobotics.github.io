@@ -37,7 +37,7 @@ function OurTeam() {
                 description="Meet the passionate and skilled individuals behind Heat Robotics. Our team is dedicated to building cutting-edge technology to support firefighters and improve safety in emergency situations."
             />
 
-            <Parallax image="wildfire-5.jpg" />
+            <Parallax image="wildfire-5" />
 
             <SkewedDiv>
                 {groups.map((group, i) => (
@@ -45,7 +45,7 @@ function OurTeam() {
                 ))}
             </SkewedDiv>
 
-            <Parallax image="wildfire-1.jpg" /> {/* Different image for the second parallax */}
+            <Parallax image="wildfire-1" /> {/* Different image for the second parallax */}
         </div>
     );
 }

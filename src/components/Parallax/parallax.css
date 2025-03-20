@@ -4,3 +4,9 @@
     background-attachment: fixed;
     background-position: center;
 }
+
+@media (max-width: 800px) {
+    .parallax {
+        background-attachment: scroll; /* Disables fixed background on mobile */
+    }
+}

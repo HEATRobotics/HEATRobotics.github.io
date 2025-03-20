@@ -14,7 +14,7 @@ function Main() {
           <PageTitle title="HEAT Robotics"
             description="Welcome to Heat Robotics! We're developing innovative robotics solutions to assist firefighters in cold trailing, helping them navigate and detect hazards more effectively in challenging environments."></PageTitle>
 
-          <Parallax image={`wildfire-1.jpg`} />
+          <Parallax image={`wildfire-1`} />
 
           <SkewedDiv>
               <h2>EMBR</h2>
@@ -29,7 +29,7 @@ function Main() {
 
           </SkewedDiv>
 
-          <Parallax image={`wildfire-4.jpg`} />
+          <Parallax image={`wildfire-4`} />
 
       </div>
   );

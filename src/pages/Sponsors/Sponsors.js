@@ -40,7 +40,7 @@ function Sponsors() {
                 description="Interested in supporting Heat Robotics and our mission to assist firefighters with innovative robotic technology? We're always open to discussing partnership opportunities, sponsorships, and collaborations. By joining us, you'll be helping to shape the future of wildfire recovery and emergency response. To connect with our team, please reach out via email at [email@example.com]. Whether you're looking to learn more about our project or explore how your organization can get involved, we're excited to hear from you and work together to make a lasting impact.">
             </PageTitle>
 
-            <Parallax image={`wildfire-1.jpg`} />
+            <Parallax image={`wildfire-1`} />
 
             <SkewedDiv>
                 {sponsorData.map((data, index) => (
@@ -48,7 +48,7 @@ function Sponsors() {
                 ))}
             </SkewedDiv>
 
-            <Parallax image={`wildfire-3.jpg`} />
+            <Parallax image={`wildfire-3`} />
 
         </div>
     );
